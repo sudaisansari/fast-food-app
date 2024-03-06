@@ -11,7 +11,7 @@ const Hero = () => {
                 {/* Left Side Content */}
                 <div className='w-1/2 mx-8 mt-4 animate-slide-down'>
                     {/* Heading */}
-                    <h1 className="text-5xl tracking-wider font-bold mb-4 font-sans leading-tight">Unleashing <br /> Flavor at Your <br /> Fingertips</h1>
+                    <h1 className="text-5xl w-auto tracking-wider font-bold mb-4 font-sans leading-tight">Unleashing <br /> Flavor at Your <br /> Fingertips</h1>
                     {/* Text */}
                     <p className='mt-8 text-lg max-w-md leading-8 font-sans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the you can imagine industry's standard dummy text.</p>
                     {/* Button */}

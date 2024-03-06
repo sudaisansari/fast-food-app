@@ -90,11 +90,6 @@
   }
 }
 
-.animate-slide-down {
-  animation: slideDown 1s ease-in-out;
-}
-
-
 /* Add this to your global styles or in a separate CSS file */
 
 @keyframes slideLeft {
@@ -119,10 +114,27 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
 .animate-slide-left {
   animation: slideLeft 1s ease-in-out;
 }
 
 .animate-slide-right {
   animation: slideRight 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 1s ease-in-out;
 }
