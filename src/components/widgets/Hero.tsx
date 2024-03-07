@@ -3,6 +3,7 @@ import { Button } from '../ui/button'
 import HeroI from '/public/hero.jpeg'
 import Image from 'next/image'
 import Wrapper from '../shared/Wrapper'
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -16,7 +17,11 @@ const Hero = () => {
                     <p className='mt-8 text-lg max-w-md leading-8 font-sans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the you can imagine industry's standard dummy text.</p>
                     {/* Button */}
                     <div className='mt-8 mx-2'>
-                    <Button variant={"default"} className='bg-[#EA002A] hover:bg-[#ffffff] hover:text-[#EA002A] hover:translate-y-[2px] hover:ring-2 ring-[#EA002A] font-sans'>Order Now</Button>
+                        <Link href={"/menu"}>
+                            <Button variant={"default"} className='bg-[#EA002A] hover:bg-[#ffffff] hover:text-[#EA002A] hover:translate-y-[2px] hover:ring-2 ring-[#EA002A] font-sans text-2xl font-semibold'>
+                                Explore Menu
+                            </Button>
+                        </Link>
                     </div>
                 </div>
                 {/* Right Side Image */}

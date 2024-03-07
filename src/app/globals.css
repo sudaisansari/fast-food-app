@@ -138,3 +138,16 @@
 .animate-slide-down {
   animation: slideDown 1s ease-in-out;
 }
+
+@keyframes run {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.running-swiper {
+  animation: run 20s linear infinite; /* Adjust the duration as needed */
+}
