@@ -14,11 +14,10 @@ const DealsandSignaturess = () => {
     const upperDeal = data.slice(5, 7)
 
     const lowerDeal = data.slice(7)
-    console.log("deal1 ", lowerDeal)
 
     return (
         <Wrapper>
-            <div className='mb-20 mt-32'>
+            <div className='mb-20 mt-20'>
                 {/* Heading */}
                 <div className='mx-10'>
                     <h2 className='text-5xl w-auto tracking-wider font-bold mb-4 font-sans leading-tight'>
