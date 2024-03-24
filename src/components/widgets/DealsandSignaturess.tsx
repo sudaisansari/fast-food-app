@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import Image from 'next/image';
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+
 
 const DealsandSignaturess = () => {
 
@@ -28,7 +30,7 @@ const DealsandSignaturess = () => {
                 {/* Signature And Deals */}
                 <div className='flex flex-col md:flex-row'>
                     {/* Signature Left Side  */}
-                    <div className='mt-8 md:w-1/2 overflow-hidden flex items-center'>
+                    {/* <div className='mt-8 md:w-1/2 overflow-hidden flex items-center'>
                         <Swiper
                             spaceBetween={5}
                             loop={true}
@@ -61,6 +63,12 @@ const DealsandSignaturess = () => {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
+                    </div> */}
+                    <div className="mt-8 md:w-1/2 mx-2 h-[40rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+                        <InfiniteMovingCards
+                            direction="right"
+                            speed="slow"
+                        />
                     </div>
                     {/* Deals Right Side */}
                     <div className='bg-[#EA002A] rounded-sm mt-8 md:w-1/2'>
@@ -69,16 +77,18 @@ const DealsandSignaturess = () => {
                             <div className='flex flex-col md:flex-row items-center justify-between'>
                                 {upperDeal.map((product) => (
                                     <div key={product.id} className="">
-                                        <Image
-                                            width={250}
-                                            height={300}
-                                            src={product.image}
-                                            className='transform hover:scale-110 transition-transform'
-                                            alt='Deal 1 and Deal 2'
-                                        />
-                                        <div className='mb-4 text-center'>
-                                            <p className='font-extrabold text-3xl italic'>{product.title}</p>
-                                        </div>
+                                        <button>
+                                            <Image
+                                                width={250}
+                                                height={300}
+                                                src={product.image}
+                                                className='transform hover:scale-110 transition-transform'
+                                                alt='Deal 1 and Deal 2'
+                                            />
+                                            <div className='mb-4 text-center'>
+                                                <p className='font-extrabold text-3xl italic'>{product.title}</p>
+                                            </div>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -89,16 +99,18 @@ const DealsandSignaturess = () => {
                             <div className='flex flex-row justify-center'>
                                 {lowerDeal.map((product) => (
                                     <div key={product.id} className="">
-                                        <Image
-                                            width={250}
-                                            height={300}
-                                            src={product.image}
-                                            className='transform hover:scale-110 transition-transform'
-                                            alt='Deal 3'
-                                        />
-                                        <div className='mb-4 text-center'>
-                                            <p className='font-extrabold text-3xl italic'>{product.title}</p>
-                                        </div>
+                                        <button>
+                                            <Image
+                                                width={250}
+                                                height={300}
+                                                src={product.image}
+                                                className='transform hover:scale-110 transition-transform'
+                                                alt='Deal 3'
+                                            />
+                                            <div className='mb-4 text-center'>
+                                                <p className='font-extrabold text-3xl italic'>{product.title}</p>
+                                            </div>
+                                        </button>
                                     </div>
                                 ))}
                             </div>

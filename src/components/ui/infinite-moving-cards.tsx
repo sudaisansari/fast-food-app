@@ -82,7 +82,7 @@ export const InfiniteMovingCards = ({
         )}
       >
         {productsData.map((product) => (
-          <div className="">
+          <div key={product.id}  className="">
             <ProductCard
               id={product.id}
               image={product.image}

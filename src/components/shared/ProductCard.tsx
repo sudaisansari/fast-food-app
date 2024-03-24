@@ -13,11 +13,11 @@ const ProductCard = (
 ) => {
     return (
         <div id={props.id} className='mt-4 mx-10 mb-2 w-auto max-w-64 h-auto items-center bg-[#1C1816] text-center rounded-xl overflow-hidden'>
-
-            <div className='bg-[#EA002A] w-12 mx-auto rounded-b-md hover:bg-white animate-slide-down'>
-                <CgBitbucket className='text-4xl text-white hover:text-[#EA002A] items-center mx-[5px] font-semibold' />
-            </div>
-
+            <button>
+                <div className='bg-[#EA002A] w-12 mx-auto rounded-b-md hover:bg-white animate-slide-down'>
+                    <CgBitbucket className='text-4xl text-white hover:text-[#EA002A] items-center mx-[5px] font-semibold' />
+                </div>
+            </button>
             <div className='mx-auto transform hover:scale-105 transition-transform'>
                 <Image
                     width={250}

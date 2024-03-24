@@ -5,7 +5,6 @@
 import Wrapper from '@/components/shared/Wrapper';
 import ProductCard from '@/components/shared/ProductCard';
 import { productsData } from '@/components/shared/Data';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 
@@ -23,7 +22,7 @@ const Services = () => {
           </div>
           <div className='mt-8 grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[repeat(3,auto)] justify-start gap-x-16 mx-4'>
             {productsData.map((product) => (
-              <div className="">
+              <div key={product.id} className="">
                 <ProductCard
                   id={product.id}
                   image={product.image}
@@ -45,7 +44,7 @@ const Services = () => {
           </div>
           <div className='mt-8 grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[repeat(3,auto)] justify-start gap-x-16 mx-4'>
             {productsData.map((product) => (
-              <div className="">
+              <div key={product.id} className="">
                 <ProductCard
                   id={product.id}
                   image={product.image}
@@ -68,7 +67,7 @@ const Services = () => {
           </div>
           <div className='mt-8 grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[repeat(3,auto)] justify-start gap-x-16 mx-4'>
             {productsData.map((product) => (
-              <div className="">
+              <div key={product.id} className="">
                 <ProductCard
                   id={product.id}
                   image={product.image}

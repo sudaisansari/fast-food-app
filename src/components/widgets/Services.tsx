@@ -41,7 +41,7 @@ const Services = () => {
           >
             {productsData.map((product) => (
               <SwiperSlide key={product.id}>
-                <div className="">
+                <div key={product.id} className="">
                   <ProductCard
                     id={product.id}
                     image={product.image}
