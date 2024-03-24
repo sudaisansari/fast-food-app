@@ -12,10 +12,10 @@ const Hero = () => {
                 {/* Left Side Content */}
                 <div className='md:w-1/2 mt-4 w-full text-center md:text-left animate-slide-down'>
                     {/* Heading */}
-                    <h1 className="bg-gradient-to-r from-[#dd1818] to-[#333333]  inline-block text-transparent bg-clip-text text-5xl text-center md:text-left w-auto tracking-wider font-bold mb-4 font-sans leading-tight">Unleashing <br /> Flavor at Your <br /> Fingertips</h1>
+                    <h1 className="bg-gradient-to-r from-[#dd1818] to-[#333333] inline-block text-transparent bg-clip-text text-5xl text-center md:text-left w-auto tracking-wider font-bold mb-4 font-sans leading-tight">Unleashing <br /> Flavor at Your <br /> Fingertips</h1>
                     {/* Text */}
                     <div>
-                        <p className='mt-8 text-xl text-center md:text-left  w-full max-w-md leading-8 font-sans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the you can imagine industry's standard dummy text.</p>
+                        <p className='mt-8 text-xl text-center md:text-left  w-full max-w-md leading-8 font-sans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the you can imagine industry standard dummy text.</p>
                     </div>
                     {/* Button */}
                     <div className='mt-8 mx-2'>

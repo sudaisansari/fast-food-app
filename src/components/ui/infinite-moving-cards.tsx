@@ -7,7 +7,7 @@ import ProductCard from "../shared/ProductCard";
 
 export const InfiniteMovingCards = ({
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
@@ -21,7 +21,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  });
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -82,7 +82,7 @@ export const InfiniteMovingCards = ({
         )}
       >
         {productsData.map((product) => (
-          <div key={product.id}  className="">
+          <div key={product.id}>
             <ProductCard
               id={product.id}
               image={product.image}
