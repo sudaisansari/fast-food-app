@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Hero = () => {
     return (
         <Wrapper>
-            <div className='mt-16 flex flex-col lg:flex-row md:items-center '>
+            <div className='mt-16 flex flex-col lg:flex-row md:items-center'>
                 {/* Left Side Content */}
                 <div className='md:w-1/2 mt-4 w-full text-center md:text-left animate-slide-down'>
                     {/* Heading */}
@@ -29,8 +29,8 @@ const Hero = () => {
                 {/* Right Side Image */}
                 <div className='mt-8 hidden md:block mx-8 animate-slide-right'>
                     <Image className='md:content-center'
-                        height={400}
-                        width={500}
+                        height={600}
+                        width={600}
                         src={HeroI}
                         alt='Hero image'
                     />

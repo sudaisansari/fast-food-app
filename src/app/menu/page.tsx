@@ -13,14 +13,14 @@ const Services = () => {
     <Wrapper>
       <div>
         {/* Regular Meal */}
-        <div className='mt-32'>
+        <div className='mt-32 md:px-16'>
           <div className='mx-10'>
             <h2 className='text-5xl w-auto tracking-wider font-bold mb-4 font-sans leading-tight'>
               Reguler Meal
             </h2>
             <span className="mx-1 block h-1 w-16 bg-gradient-to-r from-[#dd1818] to-[#333333]"></span>
           </div>
-          <div className='mt-8 grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[repeat(3,auto)] justify-start gap-x-16 mx-4'>
+          <div className='mt-8  grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[repeat(3,auto)] justify-start gap-x-16 mx-4'>
             {productsData.map((product) => (
               <div key={product.id} className="">
                 <ProductCard
@@ -35,7 +35,7 @@ const Services = () => {
         </div>
 
         {/* Promotions */}
-        <div className='mt-32'>
+        <div className='mt-32 md:px-16'>
           <div className='mx-10'>
             <h2 className='text-5xl w-auto tracking-wider font-bold mb-4 font-sans leading-tight'>
               Promotions
@@ -58,7 +58,7 @@ const Services = () => {
 
 
         {/* Combo Deals */}
-        <div className='mt-32'>
+        <div className='mt-32 md:px-16'>
           <div className='mx-10'>
             <h2 className='text-5xl w-auto tracking-wider font-bold mb-4 font-sans leading-tight'>
               Combo Deals

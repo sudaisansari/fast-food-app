@@ -27,7 +27,7 @@ const Header = () => {
                     {/* Logo (visible on larger screens) */}
                     <div className="hidden lg:block ">
                         <Link href="/">
-                            <Image src="/Logo.png" alt="Logo" width={150} height={50} />
+                            <Image src="/Logo.png" alt="Logo" width={130} height={10} />
                         </Link>
                     </div>
                     {/* Navigation Buttons (visible on larger screens) */}

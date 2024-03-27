@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import Image from 'next/image';
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { cn } from '@/lib/utils';
 
 
 const DealsandSignaturess = () => {
@@ -30,7 +30,12 @@ const DealsandSignaturess = () => {
                 {/* Signature And Deals */}
                 <div className='flex flex-col md:flex-row'>
                     {/* Signature Left Side  */}
-                    {/* <div className='mt-8 md:w-1/2 overflow-hidden flex items-center'>
+                    <div
+                        // className='mt-8 overflow-hidden flex items-center'
+                        className={cn(
+                            "scroller relative flex items-center md:w-1/2 z-20 mt-8 max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+                        )}
+                    >
                         <Swiper
                             spaceBetween={5}
                             loop={true}
@@ -63,13 +68,8 @@ const DealsandSignaturess = () => {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-                    </div> */}
-                    <div className="mt-8 md:w-1/2 mx-2 h-[40rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-                        <InfiniteMovingCards
-                            direction="right"
-                            speed="slow"
-                        />
                     </div>
+                    
                     {/* Deals Right Side */}
                     <div className='bg-[#EA002A] rounded-sm mt-8 md:w-1/2'>
                         {/* Upper Side */}
