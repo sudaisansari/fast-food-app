@@ -25,8 +25,8 @@ const Services = () => {
         >
           <Swiper
             spaceBetween={5}
-            loop={true}
-            autoplay={{ delay: 1000 }}
+            // loop={true}
+            // autoplay={{ delay: 1000 }}
             breakpoints={{
               320: {
                 slidesPerView: 1,

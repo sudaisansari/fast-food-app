@@ -38,7 +38,7 @@ const DealsandSignaturess = () => {
                     >
                         <Swiper
                             spaceBetween={5}
-                            loop={true}
+                            // loop={true}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,
@@ -53,7 +53,7 @@ const DealsandSignaturess = () => {
                                     slidesPerView: 2,
                                 },
                             }}
-                            autoplay={{ delay: 2000 }}
+                            // autoplay={{ delay: 2000 }}
                         >
                             {productsData.map((product) => (
                                 <SwiperSlide key={product.id}>
