@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Services />
+      {/* <Services />
       <DealsandSignaturess />
-      <GetInTouch />
+      <GetInTouch /> */}
     </main>
   )
 }
